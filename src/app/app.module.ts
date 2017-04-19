@@ -7,10 +7,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MapPage } from '../pages/map/map';
 import {AboutPage} from "../pages/about/about";
 
+import {DriverPage} from "../pages/driver/driver";
+import {ProfilePage} from "../pages/profile/profile";
+import {StatisticsPage} from "../../../taximobile/src/pages/statistics/statistics";
+import {TripHistoryPage} from "../pages/trip-history/trip-history";
+import {PastBookingPage} from "../pages/past-booking/past-booking";
+
 @NgModule({
   declarations: [
     MyApp,
-    MapPage,AboutPage
+    MapPage,AboutPage,DriverPage,ProfilePage,StatisticsPage,TripHistoryPage,PastBookingPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -18,7 +24,7 @@ import {AboutPage} from "../pages/about/about";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    MapPage,AboutPage
+    MapPage,AboutPage,DriverPage,ProfilePage,StatisticsPage,TripHistoryPage,PastBookingPage
   ],
   providers: [
     StatusBar,
