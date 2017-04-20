@@ -2,6 +2,8 @@ import { Component,OnInit } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import L from "leaflet";
+import {LoginPage} from "../login/login";
+import {RegisterPage} from "../register/register";
 
 /*
   Generated class for the Map page.
@@ -39,6 +41,16 @@ export class MapPage implements OnInit{
     //Add OSM Layer
     L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
       .addTo(this.map);
+  }
+
+  goToLoginPage()
+  {
+    this.navCtrl.push(LoginPage);
+  }
+
+  goToRegisterPage()
+  {
+    this.navCtrl.push(RegisterPage);
   }
 
 }

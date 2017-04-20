@@ -12,11 +12,19 @@ import {ProfilePage} from "../pages/profile/profile";
 import {StatisticsPage} from "../../../taximobile/src/pages/statistics/statistics";
 import {TripHistoryPage} from "../pages/trip-history/trip-history";
 import {PastBookingPage} from "../pages/past-booking/past-booking";
+import {PendingBokingPage} from "../pages/pending-boking/pending-boking";
+
+import {DriverRegistrationPage} from "../pages/driver-registration/driver-registration";
+import {PassengerRegistrationPage} from "../pages/passenger-registration/passenger-registration";
+import {RegisterPage} from "../pages/register/register";
+import {LoginPage} from "../pages/login/login";
+
 
 @NgModule({
   declarations: [
     MyApp,
-    MapPage,AboutPage,DriverPage,ProfilePage,StatisticsPage,TripHistoryPage,PastBookingPage
+    MapPage,AboutPage,DriverPage,ProfilePage,StatisticsPage,TripHistoryPage,PastBookingPage,
+    PendingBokingPage,RegisterPage,DriverRegistrationPage,PassengerRegistrationPage,LoginPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -24,7 +32,8 @@ import {PastBookingPage} from "../pages/past-booking/past-booking";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    MapPage,AboutPage,DriverPage,ProfilePage,StatisticsPage,TripHistoryPage,PastBookingPage
+    MapPage,AboutPage,DriverPage,ProfilePage,StatisticsPage,TripHistoryPage,PastBookingPage,
+    PendingBokingPage,RegisterPage,DriverRegistrationPage,PassengerRegistrationPage,LoginPage
   ],
   providers: [
     StatusBar,

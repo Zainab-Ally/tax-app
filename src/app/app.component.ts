@@ -8,6 +8,12 @@ import {AboutPage} from "../pages/about/about";
 
 import {DriverPage} from "../pages/driver/driver";
 
+import {DriverRegistrationPage} from "../pages/driver-registration/driver-registration";
+import {PassengerRegistrationPage} from "../pages/passenger-registration/passenger-registration";
+import {RegisterPage} from "../pages/register/register";
+import {LoginPage} from "../pages/login/login";
+
+
 
 
 @Component({
@@ -25,11 +31,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Login', component:  LoginPage },
       { title: 'Home', component: MapPage },
       { title: 'About', component: AboutPage },
 
       { title: 'Driver', component: DriverPage },
-
+      { title: 'Registration', component: RegisterPage }
     ];
 
   }
