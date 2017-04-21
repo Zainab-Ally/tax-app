@@ -26,7 +26,7 @@ export class MapPage implements OnInit{
 
     //set map center
     //this.center = [48.137154, 11.576124]; //Munich
-    this.center = [48.775556, 9.182778]; //Stuttgart
+    this.center = [48.775556, 10.282778]; //Stuttgart
 
     //setup leaflet map
     this.initMap();
@@ -41,6 +41,9 @@ export class MapPage implements OnInit{
     //Add OSM Layer
     L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png")
       .addTo(this.map);
+
+    //add marker
+    var marker = L.marker([48.775556, 10.272778]).addTo(this.map);
   }
 
   goToLoginPage()

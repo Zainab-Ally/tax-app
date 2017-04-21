@@ -18,8 +18,8 @@ export class PassengerRegistrationPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PassengerRegister');
+  sumitForm(){
+    console.log("Form is ready for submission");
   }
 
 }

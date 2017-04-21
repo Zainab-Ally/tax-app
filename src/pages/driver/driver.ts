@@ -3,9 +3,9 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import {PastBookingPage} from "../past-booking/past-booking";
 import {TripHistoryPage} from "../trip-history/trip-history";
-import {StatisticsPage} from "../../../../taximobile/src/pages/statistics/statistics";
 import {ProfilePage} from "../profile/profile";
 import {PendingBokingPage} from "../pending-boking/pending-boking";
+import {StatisticsPage} from "../statistics/statistics";
 
 
 /*

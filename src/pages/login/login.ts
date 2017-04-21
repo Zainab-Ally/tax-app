@@ -15,8 +15,9 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
+  sumitForm(){
+    console.log("Form is ready for submission");
   }
+
 
 }

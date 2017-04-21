@@ -18,8 +18,9 @@ export class DriverRegistrationPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DriverRegister');
+
+  sumitForm(){
+    console.log("form is ready");
   }
 
 }
