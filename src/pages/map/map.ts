@@ -26,7 +26,7 @@ export class MapPage implements OnInit{
 
     //set map center
     //this.center = [48.137154, 11.576124]; //Munich
-    this.center = [48.775556, 10.282778]; //Stuttgart
+    this.center = [-6.816330, 39.276638]; //Stuttgart
 
     //setup leaflet map
     this.initMap();
@@ -43,7 +43,10 @@ export class MapPage implements OnInit{
       .addTo(this.map);
 
     //add marker
-    var marker = L.marker([48.775556, 10.272778]).addTo(this.map);
+    var marker = L.marker([-6.816330, 39.276638]).addTo(this.map);
+
+
+
   }
 
   goToLoginPage()
