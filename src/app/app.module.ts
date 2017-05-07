@@ -1,8 +1,5 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 
-//storage class
-import {Storage} from '@ionic/storage';
-
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
@@ -22,6 +19,8 @@ import {PassengerRegistrationPage} from "../pages/passenger-registration/passeng
 import {LoginPage} from "../pages/login/login";
 import {DataStoragePage} from "../pages/data-storage/data-storage";
 
+import { IonicStorageModule } from '@ionic/storage';
+
 
 
 @NgModule({
@@ -31,7 +30,8 @@ import {DataStoragePage} from "../pages/data-storage/data-storage";
     PendingBokingPage,RegisterPage,DriverRegistrationPage,PassengerRegistrationPage,LoginPage,DataStoragePage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,6 +42,6 @@ import {DataStoragePage} from "../pages/data-storage/data-storage";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},Storage]
+    {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}

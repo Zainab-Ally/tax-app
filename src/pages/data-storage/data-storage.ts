@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-//storage class
-import {Storage} from '@ionic/storage';
+
+import { Storage } from '@ionic/storage';
 
 import { NavController, NavParams } from 'ionic-angular';
 
@@ -16,7 +16,9 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class DataStoragePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public storage:Storage) {}
+  constructor(public navCtrl: NavController,
+              public Storage: Storage,
+              public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DataStoragePage');
@@ -24,10 +26,18 @@ export class DataStoragePage {
 // set and get data functions
 
   setData(){
+    this.Storage.ready().then(()=>{
+      this.Storage.set("name","My app");
+    });
     console.log("set data");
   }
 
   getData(){
+    this.Storage.ready().then(() => {
+      this.Storage.get('name').then((val) => {
+        console.log('Your set value is : ', val);
+      })
+    });
     console.log("get data");
   }
 
