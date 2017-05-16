@@ -54,11 +54,12 @@
         <ion-input type="email" placeholder="Date of Birth :" [(ngModel)]="data2.bdate"></ion-input>
       </ion-item>
 
+
     </ion-list>
   </div>
 
-  <button ion-button round (click)="sumitForm()">Submit</button>
+  <button ion-button round (click)="setData()">Set</button>
+  <button ion-button round (click)="getData()">Get</button>
   <button ion-button round  (click)="navCtrl.pop()">Cancel</button>
 
 </ion-content>
-

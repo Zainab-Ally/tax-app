@@ -16,8 +16,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class DataStoragePage {
 
-  constructor(public navCtrl: NavController,
-              public Storage: Storage,
+  constructor(public navCtrl: NavController,public Storage: Storage,
               public navParams: NavParams) {}
 
   ionViewDidLoad() {

@@ -51,12 +51,14 @@
 
 
 
-
+  <ion-row *ngIf="!loadingData" >
+    <ion-col width-100>
   <button ion-button round (click)="sumitForm()">Submit</button>
 
   <button ion-button round  (click)="navCtrl.pop()">Cancel</button>
 
-
+    </ion-col>
+  </ion-row>
 
 
 </ion-content>

@@ -13,6 +13,7 @@ import {PassengerRegistrationPage} from "../pages/passenger-registration/passeng
 import {RegisterPage} from "../pages/register/register";
 import {LoginPage} from "../pages/login/login";
 import {DataStoragePage} from "../pages/data-storage/data-storage";
+import {RideListPage} from "../pages/ride-list/ride-list";
 
 
 
@@ -38,7 +39,8 @@ export class MyApp {
 
       { title: 'Driver', component: DriverPage },
       { title: 'Registration', component: RegisterPage },
-      { title: 'My data', component: DataStoragePage }
+      { title: 'My data', component: DataStoragePage },
+      { title: 'Rides', component: RideListPage }
     ];
 
   }

@@ -46,7 +46,6 @@ export class MapPage implements OnInit{
     var marker = L.marker([-6.816330, 39.276638]).addTo(this.map);
 
 
-
   }
 
   goToLoginPage()

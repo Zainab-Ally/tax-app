@@ -20,6 +20,7 @@ import {LoginPage} from "../pages/login/login";
 import {DataStoragePage} from "../pages/data-storage/data-storage";
 
 import { IonicStorageModule } from '@ionic/storage';
+import {RideListPage} from "../pages/ride-list/ride-list";
 
 
 
@@ -27,7 +28,8 @@ import { IonicStorageModule } from '@ionic/storage';
   declarations: [
     MyApp,
     MapPage,AboutPage,DriverPage,ProfilePage,StatisticsPage,TripHistoryPage,PastBookingPage,
-    PendingBokingPage,RegisterPage,DriverRegistrationPage,PassengerRegistrationPage,LoginPage,DataStoragePage
+    PendingBokingPage,RegisterPage,DriverRegistrationPage,PassengerRegistrationPage,LoginPage,DataStoragePage,
+    RideListPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -37,7 +39,8 @@ import { IonicStorageModule } from '@ionic/storage';
   entryComponents: [
     MyApp,
     MapPage,AboutPage,DriverPage,ProfilePage,StatisticsPage,TripHistoryPage,PastBookingPage,
-    PendingBokingPage,RegisterPage,DriverRegistrationPage,PassengerRegistrationPage,LoginPage,DataStoragePage
+    PendingBokingPage,RegisterPage,DriverRegistrationPage,PassengerRegistrationPage,LoginPage,DataStoragePage,
+    RideListPage
   ],
   providers: [
     StatusBar,
