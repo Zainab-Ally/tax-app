@@ -18,6 +18,9 @@
 
 
   <ion-list >
+    <ion-item>
+      <ion-input type="text" placeholder="Passenger ID :" [(ngModel)]="data.PID" ></ion-input>
+    </ion-item>
 
     <ion-item>
       <ion-input type="text" placeholder="First name :" [(ngModel)]="data.fname" ></ion-input>
@@ -32,10 +35,6 @@
     </ion-item>
 
     <ion-item>
-      <ion-input type="text" placeholder="Physical address :"  [(ngModel)]="data.address" ></ion-input>
-    </ion-item>
-
-    <ion-item>
       <ion-input type="text" placeholder="Phone number :" [(ngModel)]="data.pnumber"></ion-input>
     </ion-item>
 
@@ -47,13 +46,17 @@
       <ion-input type="email" placeholder="Email address :" [(ngModel)]="data.email"></ion-input>
     </ion-item>
 
+    <ion-item>
+      <ion-input type="text" placeholder="Physical address :"  [(ngModel)]="data.address" ></ion-input>
+    </ion-item>
+
   </ion-list>
 
 
 
   <ion-row *ngIf="!loadingData" >
     <ion-col width-100>
-  <button ion-button round (click)="sumitForm()">Submit</button>
+  <button ion-button round (click)="sumbitForm()">Submit</button>
 
   <button ion-button round  (click)="navCtrl.pop()">Cancel</button>
 
